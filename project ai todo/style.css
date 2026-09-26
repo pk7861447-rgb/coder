@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+    background:url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600")
+    center center/cover no-repeat;
+}
+
+.container{
+    width:100%;
+    max-width:600px;
+    background:rgba(255,255,255,0.9);
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+.bg-box{
+    margin-bottom:20px;
+}
+
+.input-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.input-box input{
+    flex:1;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+.input-box button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:#2e7d32;
+    color:white;
+    cursor:pointer;
+}
+
+.input-box button:hover{
+    background:#1b5e20;
+}
+
+#taskList{
+    list-style:none;
+}
+
+#taskList li{
+    background:white;
+    margin-bottom:12px;
+    padding:12px;
+    border-radius:10px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.completed{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.actions{
+    display:flex;
+    gap:8px;
+}
+
+.tick{
+    background:#4caf50;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.delete{
+    background:#f44336;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+@media(max-width:600px){
+
+    .input-box{
+        flex-direction:column;
+    }
+
+    .input-box button{
+        width:100%;
+    }
+}
